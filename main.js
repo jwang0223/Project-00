@@ -63,5 +63,10 @@ function diceRoller(times, sides) {
 }
 
 function sumArrayElements(array) {
-  return array.reduce((sum, element) => sum + element, 0);
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+      sum += array[i];
+  }
+  
+  return sum;
 }
